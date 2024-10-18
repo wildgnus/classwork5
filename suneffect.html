@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Flickering Sun</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        h2{
+            padding-bottom: 100px;
+        }
+        #sun2{
+            transition: transform 0.5s ease;
+        }
+        .rotate{
+            transform: rotate(360deg);
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Here is a flickering sun when you hover over it</h1>
+    <img id="sun" src="sun.jpg" alt="sun" height="400" width="400">
+    <h2> Here is a spinning sun</h2>
+    <img id="sun2" src="sun2.jpg" alt="sun2" height="400" width="400">
+
+</body>
+</html>
