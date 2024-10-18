@@ -10,7 +10,6 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    // Вращение при наведении
     $("#sun2").hover(
         function() {
             $(this).css({
